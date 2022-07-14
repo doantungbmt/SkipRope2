@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./app/lib/2023sdk1.0.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/lib/2023sdk1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

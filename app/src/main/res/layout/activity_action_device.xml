@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActionDeviceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnSkipTotalData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Skip Total Data"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnGetTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Get time"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnSyncTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Sync time"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnGetBattery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Get battery"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnGetMac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Get Mac"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnGetVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/teal_700"
+            android:text="Get version"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:checkedButton="@id/rbFreeMode"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/rgSetMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_gravity="center_vertical"
+            android:id="@+id/rbFreeMode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Free" />
+
+        <RadioButton
+            android:id="@+id/rbTimeCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Time countdown" />
+
+        <RadioButton
+            android:id="@+id/rbSkipCountdown"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Skipping countdown" />
+    </RadioGroup>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtSecond"
+        android:hint="Second: 60 - 6000"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/edtSkip"
+        android:hint="Skip: 100 - 3000"
+        android:inputType="number"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnStartSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/teal_700"
+            android:text="Start Skip"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+
+        <Button
+            android:textColor="@color/white"
+            android:id="@+id/btnStopSkip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/teal_700"
+            android:text="Stop Skip"
+            android:textAllCaps="false"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#F8F8F8">
+
+        <TextView
+            android:id="@+id/txt_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </ScrollView>
+
+    <Button
+        android:textColor="@color/white"
+        android:id="@+id/btnDisconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="@color/red"
+        android:text="@string/disconnect"
+        android:textAllCaps="false"
+        android:textSize="12dp" />
+
+
+</LinearLayout>
