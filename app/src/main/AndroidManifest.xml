@@ -25,9 +25,6 @@
         </activity>
         <activity android:name=".ActionDeviceActivity"/>
         <activity android:name=".MainActivity"/>
-<!--            android:exported="true">-->
-<!--            -->
-<!--        </activity>-->
         <service android:name=".ble.BleService"/>
     </application>
 

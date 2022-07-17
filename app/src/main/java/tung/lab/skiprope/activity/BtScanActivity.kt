@@ -18,7 +18,6 @@ import android.widget.SimpleAdapter
 import androidx.core.app.ActivityCompat
 import tung.lab.skiprope.ActionDeviceActivity
 import kotlinx.android.synthetic.main.activity_scan.*
-import tung.lab.skiprope.MainActivity
 import tung.lab.skiprope.R
 import java.util.HashMap
 
@@ -214,7 +213,7 @@ class BtScanActivity : AppCompatActivity() {
             permissions[0] == Manifest.permission.ACCESS_FINE_LOCATION &&
             grantResults[0] == PackageManager.PERMISSION_GRANTED
         ) {
-            Log.d(MainActivity.TAG, "onRequestPermissionsResult: true")
+            Log.d(TAG, "onRequestPermissionsResult: true")
         }
     }
 }
